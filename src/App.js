@@ -6,7 +6,7 @@ import About from "./Component/about";
 
 function App() {
   return (
-    <div>
+    <div className="parent">
       <section className="home">
         <Header />
         <Navbar />

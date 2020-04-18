@@ -1,16 +1,12 @@
 import React from "react";
-import Header from "./Component/header";
-import Navbar from "./Component/navbar";
-import About from "./Component/about";
+// import Header from "./Component/header";
+// import Navbar from "./Component/navbar";
+import About from "./Component/pages/about";
 
 
 function App() {
   return (
     <div className="parent">
-      <section className="home">
-        <Header />
-        <Navbar />
-      </section>
 
       <About />
 

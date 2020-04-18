@@ -1,6 +1,6 @@
 import React from "react";
-import Header from "./header";
-import Navbar from "./navbar";
+import Header from "../header";
+import Navbar from "../navbar";
 
 function Resume() {
     return (

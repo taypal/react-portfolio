@@ -1,18 +1,20 @@
 import React from "react";
-import Header from "./header";
-import Navbar from "./navbar";
+import Header from "../header";
+import Navbar from "../navbar";
+var createReactClass = require('create-react-class');
 
-function About() {
-    return (
-        <div className="parent">
-            <Header />
-            <Navbar />
-            <div role="main" className="container1">
+
+var About = createReactClass({
+    render: function () {
+        return (
+
+            <main role="main" className="container1">
+                <Header />
+                <Navbar />
+
                 <h1>About Me</h1>
-
-
-                <img className="img1" src="./assets/Images/F142C128-5496-4C81-A984-576CE8019927.jpeg" alt="goutes"></img>
-
+                <hr />
+                <img className="img1" src="./assets/Images/F142C128-5496-4C81-A984-576CE8019927.jpeg" alt="goutes" />
                 <p>I am a Utah Man Sir! I love my Utah Utes! My husband and I go to all the home football games
                 and away games. No matter the score, I will always cheer them on. The away games
                 help fill in the "traveling" hole in my heart. I love to travel and explore. Utah is not my end destination!
@@ -26,21 +28,15 @@ function About() {
                 satisfaction. In both my academic and professional life, I have been consistently praised as proactive by my
                 coworkers and peers. Whether working on academic, extracurricular, or professional projects, I apply proven
             organizational, multitasking, and problem-solving skills.</p>
-
-
-
-                <button className="col-sm-4"
-                    onclick="window.location.href = 'https://www.linkedin.com/in/taylor-p-804498134/';">Linkedin
-                    Profile
-            </button>
-
-                <button className="col-sm-4" onclick="window.location.href = './resume.js';">Resume</button>
-
-                <button className="col-sm-4" onclick="window.location.href = 'https://github.com/taypal';">GitHub Profile</button>
-            </div>
-        </div>
-
-    )
-}
+                <hr />
+                <button className="col-sm-4" onClick={window.location.href = 'https://www.linkedin.com/in/taylor-p-804498134/'}>Linkedin
+            Profile</button>
+                <button className="col-sm-4" onClick={window.location.href = 'resume.html'
+                } > Resume</button>
+                <button className="col-sm-4" onClick={window.location.href = 'https://github.com/taypal'}> GitHub Profile</button >
+            </main >
+        );
+    }
+});
 
 export default About;

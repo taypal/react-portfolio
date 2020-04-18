@@ -1,4 +1,5 @@
 import React from "react";
+
 var createReactClass = require('create-react-class');
 
 var Navbar = createReactClass({

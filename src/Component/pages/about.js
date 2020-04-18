@@ -5,8 +5,11 @@ var createReactClass = require('create-react-class');
 
 
 var About = createReactClass({
+
     render: function () {
         return (
+
+            //functions for the websites
 
             <main role="main" className="container1">
                 <Header />
@@ -29,14 +32,15 @@ var About = createReactClass({
                 coworkers and peers. Whether working on academic, extracurricular, or professional projects, I apply proven
             organizational, multitasking, and problem-solving skills.</p>
                 <hr />
-                <button className="col-sm-4" onClick={window.location.href = 'https://www.linkedin.com/in/taylor-p-804498134/'}>Linkedin
+                {/* <button className="col-sm-4" onClick={window.location = 'https://www.linkedin.com/in/taylor-p-804498134/'}>Linkedin
             Profile</button>
-                <button className="col-sm-4" onClick={window.location.href = 'resume.html'
+                <button className="col-sm-4" onClick={window.location = 'resume.html'
                 } > Resume</button>
-                <button className="col-sm-4" onClick={window.location.href = 'https://github.com/taypal'}> GitHub Profile</button >
+                <button className="col-sm-4" onClick={window.location = 'https://github.com/taypal'}> GitHub Profile</button > */}
             </main >
         );
     }
 });
 
 export default About;
+

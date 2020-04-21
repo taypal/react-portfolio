@@ -9,7 +9,7 @@ var About = createReactClass({
     render: function () {
         return (
 
-            //functions for the websites
+            //functions for the websites   
 
             <main role="main" className="container1">
                 <Header />
